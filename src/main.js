@@ -11,6 +11,8 @@ Vue.config.productionTip = false
 import firms from './assets/data.json';
 
 
+
+
 new Vue({
   el: '#app',
   data() {
