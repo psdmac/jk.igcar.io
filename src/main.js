@@ -1,8 +1,21 @@
 import Vue from 'vue'
-import App from './App.vue'
+import '../node_modules/uikit/dist/css/uikit.min.css'
+import './sass/index.scss'
 
+import UIkit from 'uikit';
+import Icons from 'uikit/dist/js/uikit-icons';
+
+UIkit.use(Icons);
 Vue.config.productionTip = false
 
+import firms from './assets/data.json';
+
+
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  el: '#app',
+  data() {
+    return {
+      firms: firms.firm_list
+    }
+  }
+})

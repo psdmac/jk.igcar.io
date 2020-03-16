@@ -1,17 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="content-language" content="zh-tw">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <title>IGcar 愛駒職人 x LINE TAXI 車內防疫消毒活動</title>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>不支援</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="app">
+      <div class="container">
+        <div class="banner-wrapper">
+          <div class="ratio">
+            <img src="https://via.placeholder.com/800x450" alt="">
+          </div>
+        </div>
+        <div class="uk-card uk-card-default navbar" style="z-index: 980;" uk-sticky>
+          <div class="uk-button-group">
+            <a href="#activity"><button class="uk-button uk-button-secondary">活動說明</button></a>
+            <a href="#route"><button class="uk-button uk-button-secondary">使用流程</button></a>
+            <a href="#firms"><button class="uk-button uk-button-secondary">服務據點</button></a>
+          </div>
+        </div>
+      </div>
+      <div id="activity" class="section-block">
+        <div class="container">
+          <h2 class="title">活動說明</h2>
+          <div class="content">
+            <div class="uk-card uk-card-default uk-card-body">
+              <p>IGcar 愛駒養車電商攜手 LINE TAXI 守護乘客與司機健康</p>
+              <p>世界衛生組織(WHO)11日正式宣布，新冠肺炎進入「全球大流行」(global pandemic)階段，WHO秘書長譚德賽表示，「過去兩周來，中國大陸以外的確診病例已暴增13倍，受影響的國家也增加三倍，預估未來數日到數周，不論是病例數、死亡數和受影響的國家，都會繼續攀升」。</p>
+              
+              <p>
+                受惠於台灣政府對於疫情發展的果斷決策與快速反應，防疫的成果世界有目共睹，在全球疫情大爆發的今日，包括紐西蘭在內的多個國家也都紛紛跟隨「台灣模式」，冀望在這波疫情攻勢下獲得最佳解套。而台灣除了政府端政策的努力，民間企業響應政府的防疫計畫亦居功厥偉，不僅醫療相關產業組織口罩國家隊，許多民間企業也都自發性的打造防疫機制。
+              </p>
+              <p>
+                作為專注提供車主及車後市場經營者數位資訊服務的公司，IGcar 愛駒養車電商也在近期發起《一元防疫》公益服務，該計畫主要鎖定國內廣義營業用車提供高溫蒸汽殺菌(或臭氧殺菌)的服務，僅需在  IGcar 愛駒養車網站進行線上預約或是電話預約，以1元購買服務，就可以在響應本次活動的汽車美容店獲得服務。
+              </p>
+              <p>
+                愛駒養車電商此次更與 LINE TAXI 合作，提供司機首次免費的車內高溫蒸汽殺菌(或臭氧殺菌)的服務，司機會透過 LINE TAXI 系統獲得使用序號，後過愛駒養車網站與服務據點做線上預約或電話預約，即可在指定時間內到場使用車內殺菌服務。
+              </p>
+              <p>
+                新型冠狀肺炎全球疫情仍持續升溫，台灣的新創公司也在此時與政府並肩作戰。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="route" class="section-block">
+        <div class="container">
+          <h2 class="title">使用流程</h2>
+        </div>
+      </div>
+      <div id="firms" class="firm-wrapper section-block">
+        <div class="container">
+          <h2 class="title">服務據點</h2> 
+          <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
+            <div v-for="f in firms" :key="f.id">
+              <div class="uk-card uk-card-default">
+                <div class="uk-flex">
+                  <div class="img-wrapper">
+                    <div class="ratio">
+                      <div class="ratio-inner">
+                        <img :src="'https://s3-us-west-2.amazonaws.com/tw.com.igcar/upload/images/'+f.file_name" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h3><span v-if="f.group_name">{{ f.group_name }} - </span>{{ f.name }}</h3>
+                    <div>
+                      <button v-if="f.city" class="tags">{{f.city}}</button>
+                      <button v-if="f.area" class="tags">{{f.area}}</button>
+                    </div>
+                    <div v-if="f.tel" class="tel">
+                      <a :href="'tel:'+f.tel"><span class="uk-margin-small-right" uk-icon="receiver"></span>{{ f.tel }}</a>
+                    </div>
+                    <div class="address">
+                      <span class="uk-margin-small-right" uk-icon="home"></span>{{ f.address }}
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-flex btn-wrapper">
+                  <div class="booking btn">
+                    <a target="_blank" :href="'https://igcar.com.tw/shop/'+f.firm_id">
+                      <span class="uk-margin-small-right" uk-icon="calendar"></span>預約
+                    </a>
+                  </div>
+                  <div class="goto btn">
+                    <a target="_blank" :href="'https://www.google.com.tw/maps/place/'+f.city+f.area+f.address">
+                      <span class="uk-margin-small-right" uk-icon="location"></span>導航
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <footer>
+        © 2015-2020 愛駒資訊有限公司 版權所有。
+      </footer>
+      
+      
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
