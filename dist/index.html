@@ -1,140 +1,152 @@
-Html Webpack Plugin:
-<pre>
-  Error: Parse Error: <meta property="og:image" content="bn".jpg">
-      <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)  ;
-        })(window,document,'script','dataLayer','GTM-N5GRSV3');</script>
-        <!-- End Google Tag Manager -->
-    <link href="css/app.002fe7ae.css" rel="preload" as="style"><link href="css/chunk-vend  ors.7c1b5cde.css" rel="preload" as="style"><link href="js/app.bc4c5c74.js" rel="preload  " as="script"><link href="js/chunk-vendors.32954520.js" rel="preload" as="script"><link   href="css/chunk-vendors.7c1b5cde.css" rel="stylesheet"><link href="css/app.002fe7ae.cs  s" rel="stylesheet"></head>
-    <body>
-      <noscript>
-        <strong>不支援</strong>
-      </noscript>
-      <div id="app">
-        <div class="container">
-          <div class="banner-wrapper">
-            <div class="ratio">
-              <img src="bn.jpg" alt="">
-            </div>
-          </div>
-          <div class="uk-card uk-card-default navbar" style="z-index: 980;" uk-sticky>
-            <div class="uk-button-group">
-              <a href="#activity"><button class="uk-button uk-button-secondary">活動說明</but  ton></a>
-              <a href="#route"><button class="uk-button uk-button-secondary">使用流程</button  ></a>
-              <a href="#firms"><button class="uk-button uk-button-secondary">服務據點</button  ></a>
-            </div>
-          </div>
-        </div>
-        <div id="activity" class="section-block">
-          <div class="container">
-            <h2 class="title">活動說明</h2>
-            <div class="content">
-              <div class="uk-card uk-card-default uk-card-body">
-                <h3>
-                  寶寶是媽媽的第一份禮物
-                </h3>
-                <p>凡預約潔客幫清潔服務，即可免費兌換IGcar「嬰兒座椅」或「嬰兒車」清潔殺菌服務</p>
-                <p>※ 兌換碼會在活動期間「每週一」固定統一寄出，「兌換碼」 及 「專屬預約頁面」資訊一起發送（ex. 5/18-5/24有預約潔客幫的朋友，統  一在5/25寄出）</p>
-                <p>活動期間：5/13-6/14</p>
-                <p>兌換期限：2020/7/31前</p>
-                <p>代碼發放日期： 5/18、5/25、6/1、6/8、6/15</p>
-              </div>
-            </div>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="zh-tw">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <title>IGcar 愛駒職人 x 潔客幫 嬰兒座椅清潔殺菌服務</title>
+    <meta property="og:image" content="bn".jpg">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-N5GRSV3');</script>
+      <!-- End Google Tag Manager -->
+      <link href="css/app.002fe7ae.css" rel="preload" as="style"><link href="css/chunk-vendors.7c1b5cde.css" rel="preload" as="style"><link href="js/app.bc4c5c74.js" rel="preload  " as="script"><link href="js/chunk-vendors.32954520.js" rel="preload" as="script"><link   href="css/chunk-vendors.7c1b5cde.css" rel="stylesheet"><link href="css/app.002fe7ae.css" rel="stylesheet">
+  </head>
+  <body>
+    <noscript>
+      <strong>不支援</strong>
+    </noscript>
+    <div id="app">
+      <div class="container">
+        <div class="banner-wrapper">
+          <div class="ratio">
+            <img src="bn.jpg" alt="">
           </div>
         </div>
-        <div id="route" class="section-block">
-          <div class="container">
-            <h2 class="title">使用流程</h2>
-            <div class="uk-card uk-card-default uk-card-body">
-              <div class="step-wrapper uk-grid-match uk-grid-row-large uk-child-width-1-3  @s uk-text-center" uk-grid>
-                <div>
-                  <div class="step uk-card uk-card-default uk-card-body">
-                    <div class="count">1</div>
-                    <p>透過潔客幫領取免費兌換碼<br>例如：CKZF000011</p>
-                  </div>
-                </div>
-                <div>
-                  <div class="step uk-card uk-card-default uk-card-body">
-                    <div class="count">2</div>
-                    <p>挑選服務據點，點擊 <span class="em-booking"><span class="uk-margin-small-ri  ght" uk-icon="calendar"></span>預約</span>至愛駒養車網站登入預約（或使用電話預約）</p>
-                  </div>
-                </div>
-                <div>
-                  <div class="step uk-card uk-card-default uk-card-body">
-                    <div class="count">3</div>
-                    <p>於指定時間至服務據點使用，將使用序號交由店家進行核銷</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="uk-card uk-card-default navbar" style="z-index: 980;" uk-sticky>
+          <div class="uk-button-group">
+            <a href="#activity"><button class="uk-button uk-button-secondary">活動說明</button></a>
+            <a href="#route"><button class="uk-button uk-button-secondary">使用流程</button></a>
+            <a href="#firms"><button class="uk-button uk-button-secondary">服務據點</button></a>
           </div>
         </div>
-        <div id="firms" class="firm-wrapper section-block">
-          <div class="container">
-            <h2 class="title">服務據點</h2> 
-            <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid=  "masonry: true">
-              <div v-for="f in firms" :key="f.id">
-                <div class="uk-card uk-card-default">
-                  <div class="uk-flex">
-                    <div class="img-wrapper">
-                      <div class="ratio">
-                        <div class="ratio-inner">
-                          <img :src="'https://s3-us-west-2.amazonaws.com/tw.com.igcar/upl  oad/images/'+f.file_name" alt="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3><span v-if="f.group_name">{{ f.group_name }} - </span>{{ f.name   }}</h3>
-                      <div>
-                        <button v-if="f.city" class="tags">{{f.city}}</button>
-                        <button v-if="f.area" class="tags">{{f.area}}</button>
-                      </div>
-                      <div v-if="f.tel" class="tel">
-                        <a :href="'tel:'+f.tel"><span class="uk-margin-small-right" uk-ic  on="receiver"></span>{{ f.tel }}</a>
-                      </div>
-                      <div class="address">
-                        <span class="uk-margin-small-right" uk-icon="home"></span>{{ f.ad  dress }}
-                      </div>
-                    </div>
-                  </div>
-                  <div class="uk-flex btn-wrapper">
-                    <div class="booking btn">
-                      <a target="_blank" :href="'https://igcar.com.tw/shop/'+f.firm_id">
-                        <span class="uk-margin-small-right" uk-icon="calendar"></span>預約
-                      </a>
-                    </div>
-                    <div class="goto btn">
-                      <a target="_blank" :href="'https://www.google.com.tw/maps/place/'+f  .city+f.area+f.address">
-                        <span class="uk-margin-small-right" uk-icon="location"></span>導航
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-block">
-          <div class="container">
-            <h2 class="title">關於愛駒</h2>
-            <div class="uk-card uk-card-default uk-card-body">
-              <p><a target="_blank" href="https://igcar.com.tw"><img width="180" src="igc  ar-logo.png" /></a></p>
-              <p>自傳統洗車美容業起家，於 2015 年正式成立的愛駒資訊股份有限公司，為一間提供車主及車後市場經營者數位資訊服務的公司，主力產品包括面向一般消費  大眾的 IGcar 愛駒養車平台以及面向店家經營者管理使用的 IGarage愛駒車廠雲系統。</p><p>2005年，愛駒資訊自一間小型車廠，以 BBS 開始進行網路行銷、採  用 EXCEL 管理客戶及帳目資訊，我們觀察到，汽車產業後端市場服務長期缺乏類似餐飲業者的 POS 點餐系統、美食平台，零售業者的 ERP 進銷存系統、電商平台，甚至物流系統  、貨架系統、中央廚房系統。</p><p>透過過去十年間，愛駒資訊己身對於車廠經營的經驗和需求，愛駒資訊親手規劃、設計了平台行銷系統以及門市管理系統，打造最符汽車消費市所需要的  產品。</p><p>2016 年 1 月，我們推出了 IGcar愛駒養車平台，協助車主線上搜尋附近汽車美容及汽車保養廠，看評價、預約、優惠資訊等。</p><p>2017 年   1 月，我們推出了 IGarage愛駒車廠雲系統，將原本只是協助車廠做網路行銷，擴增到實體門市及會員的營銷工具。</p><p>2018 年，愛駒職人品牌，應運而生，透過汽車服  務B2C2B的電商模式，可以讓車主安心滿意省錢、車廠減成本有生意、品牌商省心做市場有效率。</p><p>透過平台聯繫供應商、服務方及需求方，愛駒職人優化汽車服務的消費體驗，將  所有成本優化，減少不必要的成本，顛覆既有的市場型態，創造三贏格局。</p>
-            </div>
-          </div>
-        </div>
-        <footer>
-          © 2015-2020 愛駒資訊有限公司 版權所有。
-        </footer>
       </div>
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5GRSV3"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-      <!-- built files will be auto injected -->
+      <div id="activity" class="section-block">
+        <div class="container">
+          <h2 class="title">活動說明</h2>
+          <div class="content">
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3>
+                寶寶是媽媽的第一份禮物
+              </h3>
+              <p>凡預約潔客幫清潔服務，即可免費兌換IGcar「嬰兒座椅」或「嬰兒車」清潔殺菌服務</p>
+              <p>※ 兌換碼會在活動期間「每週一」固定統一寄出，「兌換碼」 及 「專屬預約頁面」資訊一起發送（ex. 5/18-5/24有預約潔客幫的朋友，統一在5/25寄出）</p>
+              <p>活動期間：5/13-6/14</p>
+              <p>兌換期限：2020/7/31前</p>
+              <p>代碼發放日期： 5/18、5/25、6/1、6/8、6/15</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="route" class="section-block">
+        <div class="container">
+          <h2 class="title">使用流程</h2>
+          <div class="uk-card uk-card-default uk-card-body">
+            <div class="step-wrapper uk-grid-match uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+              <div>
+                <div class="step uk-card uk-card-default uk-card-body">
+                  <div class="count">1</div>
+                  <p>透過潔客幫領取免費兌換碼<br>例如：CKZF000011</p>
+                </div>
+              </div>
+              <div>
+                <div class="step uk-card uk-card-default uk-card-body">
+                  <div class="count">2</div>
+                  <p>挑選服務據點，點擊 <span class="em-booking"><span class="uk-margin-small-right" uk-icon="calendar"></span>預約</span>至愛駒養車網站登入預約（或使用電話預約）</p>
+                </div>
+              </div>
+              <div>
+                <div class="step uk-card uk-card-default uk-card-body">
+                  <div class="count">3</div>
+                  <p>於指定時間至服務據點使用，將使用序號交由店家進行核銷</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="firms" class="firm-wrapper section-block">
+        <div class="container">
+          <h2 class="title">服務據點</h2> 
+          <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
+            <div v-for="f in firms" :key="f.id">
+              <div class="uk-card uk-card-default">
+                <div class="uk-flex">
+                  <div class="img-wrapper">
+                    <div class="ratio">
+                      <div class="ratio-inner">
+                        <img :src="'https://s3-us-west-2.amazonaws.com/tw.com.igcar/upload/images/'+f.file_name" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <h3><span v-if="f.group_name">{{ f.group_name }} - </span>{{ f.name }}</h3>
+                    <div>
+                      <button v-if="f.city" class="tags">{{f.city}}</button>
+                      <button v-if="f.area" class="tags">{{f.area}}</button>
+                    </div>
+                    <div v-if="f.tel" class="tel">
+                      <a :href="'tel:'+f.tel"><span class="uk-margin-small-right" uk-icon="receiver"></span>{{ f.tel }}</a>
+                    </div>
+                    <div class="address">
+                      <span class="uk-margin-small-right" uk-icon="home"></span>{{ f.address }}
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-flex btn-wrapper">
+                  <div class="booking btn">
+                    <a target="_blank" :href="'https://igcar.com.tw/shop/'+f.firm_id">
+                      <span class="uk-margin-small-right" uk-icon="calendar"></span>預約
+                    </a>
+                  </div>
+                  <div class="goto btn">
+                    <a target="_blank" :href="'https://www.google.com.tw/maps/place/'+f.city+f.area+f.address">
+                      <span class="uk-margin-small-right" uk-icon="location"></span>導航
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="section-block">
+        <div class="container">
+          <h2 class="title">關於愛駒</h2>
+          <div class="uk-card uk-card-default uk-card-body">
+            <p><a target="_blank" href="https://igcar.com.tw"><img width="180" src="igcar-logo.png" /></a></p>
+            <p>自傳統洗車美容業起家，於 2015 年正式成立的愛駒資訊股份有限公司，為一間提供車主及車後市場經營者數位資訊服務的公司，主力產品包括面向一般消費大眾的 IGcar 愛駒養車平台以及面向店家經營者管理使用的 IGarage愛駒車廠雲系統。</p><p>2005年，愛駒資訊自一間小型車廠，以 BBS 開始進行網路行銷、採用 EXCEL 管理客戶及帳目資訊，我們觀察到，汽車產業後端市場服務長期缺乏類似餐飲業者的 POS 點餐系統、美食平台，零售業者的 ERP 進銷存系統、電商平台，甚至物流系統、貨架系統、中央廚房系統。</p><p>透過過去十年間，愛駒資訊己身對於車廠經營的經驗和需求，愛駒資訊親手規劃、設計了平台行銷系統以及門市管理系統，打造最符汽車消費市所需要的產品。</p><p>2016 年 1 月，我們推出了 IGcar愛駒養車平台，協助車主線上搜尋附近汽車美容及汽車保養廠，看評價、預約、優惠資訊等。</p><p>2017 年 1 月，我們推出了 IGarage愛駒車廠雲系統，將原本只是協助車廠做網路行銷，擴增到實體門市及會員的營銷工具。</p><p>2018 年，愛駒職人品牌，應運而生，透過汽車服務B2C2B的電商模式，可以讓車主安心滿意省錢、車廠減成本有生意、品牌商省心做市場有效率。</p><p>透過平台聯繫供應商、服務方及需求方，愛駒職人優化汽車服務的消費體驗，將所有成本優化，減少不必要的成本，顛覆既有的市場型態，創造三贏格局。</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        © 2015-2020 愛駒資訊有限公司 版權所有。
+      </footer>
+      
+      
+    </div>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5GRSV3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- built files will be auto injected -->
     <script type="text/javascript" src="js/chunk-vendors.32954520.js"></script><script ty  pe="text/javascript" src="js/app.bc4c5c74.js"></script></body>
-  </html>
-</pre>
+  </body>
+</html>
