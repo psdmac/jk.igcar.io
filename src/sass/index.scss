@@ -1,12 +1,12 @@
 @import './normalize.scss';
-$main-color: #2BA338;
+$main-color: #36bbd9;
 body {
-  background: $main-color;
+  background: #f1f1f1;
   color: #fff;
   h2.title {
     color: #fff;
     display: inline-block;
-    background: #666;
+    background: $main-color;
     font-size: 14px;
     height: 40px;
     width: 120px;
@@ -28,7 +28,7 @@ body {
 }
 
 .uk-card.uk-card-default.navbar {
-  background: #151515;
+  background: $main-color;
   color: #fff;
   .uk-button {
     padding: 0 24px;
